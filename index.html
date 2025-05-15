@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smith Block | Crypto Cycles Playbook</title>
+
+  <!-- ====== BASIC STYLES ====== -->
+  <style>
+    :root {
+      --brand: #00e0ff;
+      --bg:    #0e0e0e;
+      --text:  #f2f2f2;
+      --accent:#252525;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a       { color: var(--brand); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    /* ===== HEADER ===== */
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      padding:20px 10px;
+      background:var(--accent);
+      box-shadow:0 2px 4px rgba(0,0,0,.45);
+    }
+    header img{
+      height:40px;
+      width:auto;
+    }
+    header h1{
+      font-size:1.8rem;
+      margin:0;
+      letter-spacing:.5px;
+    }
+
+    /* ===== HERO ===== */
+    .hero{
+      max-width:900px;
+      margin:0 auto;
+      padding:60px 20px 40px;
+      text-align:center;
+    }
+    .hero h2{
+      font-size:2.4rem;
+      margin-bottom:.4em;
+    }
+    .hero p.lead{
+      font-size:1.15rem;
+      max-width:720px;
+      margin:0 auto 1.4em;
+    }
+    .book-cover{
+      max-width:280px;
+      width:100%;
+      border-radius:8px;
+      box-shadow:0 6px 18px rgba(0,0,0,.55);
+      margin:25px auto;
+      display:block;
+    }
+
+    /* ===== BUY BUTTON ===== */
+    .buy-btn{
+      background:var(--brand);
+      border:none;
+      color:#000;
+      padding:14px 28px;
+      font-size:1.1rem;
+      border-radius:6px;
+      cursor:pointer;
+      transition:opacity .25s ease;
+    }
+    .buy-btn:hover{opacity:.85;}
+
+    /* ===== SECTIONS ===== */
+    section{
+      max-width:900px;
+      margin:0 auto;
+      padding:40px 20px;
+    }
+    section h3{
+      font-size:1.6rem;
+      margin-bottom:.6em;
+    }
+
+    /* ===== TOC LIST ===== */
+    ul.toc{
+      list-style:disc inside;
+      margin:0;
+      padding:0;
+    }
+    ul.toc li{margin:.35em 0;}
+
+    /* ===== FAQ (DETAILS) ===== */
+    details{
+      background:var(--accent);
+      padding:14px 18px;
+      border-radius:6px;
+      margin-bottom:14px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight:600;
+      margin:-14px -18px;
+      padding:14px 18px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      text-align:center;
+      font-size:.9rem;
+      padding:30px 10px 60px;
+      color:#999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <!-- Replace logo.png with your actual file name -->
+    <img src="logo.png" alt="Smith Block logo">
+    <h1>Smith&nbsp;Block</h1>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <h2>Crypto Cycles Playbook</h2>
+    <p class="lead">
+      Master the rhythms of Bitcoin &amp; altcoin markets with a proven, cycle-based
+      framework forged from <strong>8&nbsp;years</strong> of hands-on trading experience.
+    </p>
+
+    <!-- Replace book-cover.png with your real cover -->
+    <img class="book-cover" src="book-cover.png" alt="Crypto Cycles Playbook cover">
+
+    <!-- Paste your actual Stripe Checkout URL below -->
+    <button class="buy-btn" onclick="window.location.href='YOUR_STRIPE_CHECKOUT_URL';">
+      Buy Now&nbsp;— $8.99
+    </button>
+  </div>
+
+  <!-- ===== TABLE OF CONTENTS ===== -->
+  <section id="toc">
+    <h3>Inside the Playbook</h3>
+    <ul class="toc">
+      <li>Market Psychology 101 – Why prices move in cycles</li>
+      <li>Bitcoin Dominance &amp; the Altcoin Seasons</li>
+      <li>Fibonacci Timing Maps (custom 70.2 % level)</li>
+      <li>Risk-Management Blueprints that survive crashes</li>
+      <li>On-Chain Signals, Funding Rates &amp; ETF Flows</li>
+      <li>Checklists: from Trend Confirmation to Take-Profit</li>
+    </ul>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <h3>Frequently Asked Questions</h3>
+
+    <details>
+      <summary>What format do I receive the book in?</summary>
+      <p>You’ll get an instant download link for a DRM-free PDF &amp; ePub. Read it on any device.</p>
+    </details>
+
+    <details>
+      <summary>Is it beginner-friendly?</summary>
+      <p>Yes. Jargon is translated into plain English, yet the frameworks scale for advanced traders.</p>
+    </details>
+
+    <details>
+      <summary>Do you offer refunds?</summary>
+      <p>Absolutely — if you’re not happy within 14 days, email us and we’ll refund you in full.</p>
+    </details>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h3>Need help?</h3>
+    <p>
+      Email <a href="mailto:smithblockai@gmail.com">smithblockai@gmail.com</a>
+      or DM <a href="https://twitter.com/smithblockai" target="_blank">@smithblockai</a> on Twitter.
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy;&nbsp;2025 Smith Block. All rights reserved.<br>
+    Dubai, UAE &nbsp;·&nbsp; <a href="https://smithblock.ai">smithblock.ai</a>
+  </footer>
+
+</body>
+</html>
