@@ -11,7 +11,6 @@
       text-align: center;
       padding-top: 100px;
     }
-
     .download-button {
       display: none;
       background-color: #00ccff;
@@ -23,7 +22,6 @@
       font-weight: bold;
       margin-top: 20px;
     }
-
     .download-button:hover {
       background-color: #00aacc;
     }
@@ -32,10 +30,9 @@
 <body>
   <h1>✅ Thank You for Your Purchase!</h1>
   <p>Your payment was successful. You can download your ebook below:</p>
+  <a id="download-btn" href="#" class="download-button">📩 Download Your Ebook (PDF)</a>
 
-  <a id="download-btn" href="#" class="download-button" download>📩 Download Your Ebook (PDF)</a>
-
-  <p style="margin-top: 2rem;">📩 Didn't receive your file or had an issue?<br>
+  <p style="margin-top: 2rem;">📩 Didn't receive your file or had an issue? <br>
     <a href="mailto:smithblockai@gmail.com">Click here to contact us directly</a>. We'll fix it fast.
   </p>
 
@@ -51,7 +48,7 @@
         .then(data => {
           if (data.valid) {
             const downloadBtn = document.getElementById('download-btn');
-            downloadBtn.href = data.downloadUrl;
+            downloadBtn.href = `https://download-backend.onrender.com/download?token=${token}`;
             downloadBtn.style.display = 'inline-block';
           } else {
             document.body.innerHTML = '<h2 style="color: red;">❌ Invalid or expired token.</h2>';
